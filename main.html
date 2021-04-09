@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="container">
+            <logo class="logo">
+                <svg class="logo__icon" width="186" height="124">
+                    <use href="./images/sprite.svg#logo@"></use>
+                </svg>
+            </logo>
+
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-list__item">
+                        <a class="navigation-list__link" href="#">Портфолио</a>
+                    </li>
+
+                    <li class="navigation-list__item">
+                        <a class="navigation-list__link" href="#">Услуги</a>
+                    </li>
+
+                    <li class="navigation-list__item">
+                        <a class="navigation-list__link" href="#">Цены</a>
+                    </li>
+
+                    <li class="navigation-list__item">
+                        <a class="navigation-list__link" href="#">Контакты</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+
+            <ul class="contacts_list">
+                <li class="contacts_list__item">
+                    <a class="contacts_list__link" href="tel:+375 (25) 123-45-67">+375 (25) 123-45-67</a>
+                </li>
+
+                <li class="contacts_list__item">
+                    <a class="contacts_list__btn" href="#">Заказать звонок</a>
+                </li>
+            </ul>    
+
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-container">
+            <h1 class="hero__tittle">Строительство и ремонт в Гомеле</h1>
+            <p class="hero__text">Надежное будущее строим вместе</p>
+            <button class="btn">Получить консультацию</button>
+            <div class="hero__thumb">
+                <!-- srcset="./image/hero/hero1.jpg 1x, image/hero/hero1@2x.jpg 2x" -->
+                <img class="hero__img" src="./images/hero/hero1.jpg" alt="img">
+            </div>
+        </div>
+    </section>
+
+    <section class="work">
+        <div class="container">
+            <h3 class="work__tittle">КАК МЫ РАБОТАЕМ</h3>
+            <ol class="work-list">
+                <li class="work-list__item">Бесплатный выезд мастера на объект для оценки работы</li>
+                <li class="work-list__item">Обсуждение работы с заказчиком</li>
+                <li class="work-list__item">Оформление и подписание договора</li>
+                <li class="work-list__item">Выполнение работ в соответствии с пожеланиями заказчика</li>
+                <li class="work-list__item">Прием работы заказчиком и окончательный расчет</li>
+            </ol>
+    
+        </div>
+    </section>
+
+    <section class="servises">
+        <div class="container">
+            <h3 class="servises__tittle">НАШИ УСЛУГИ</h3>
+            <ul class="servises-list">
+                <li class="servises-list__item">
+                    <h4 class="servises-list__tittle">Отделочные работы</h4>
+                    <p class="servises-list__text">Электромонтажные и сантехн ические работы
+                    Демонтажные работы
+                    Штукатурные работы
+                    Малярные работы
+                    Монтаж ГКЛ
+                    Облицовка стен и потолков
+                    Укладка плитки
+                    Укладка всех видов наполных покрытий</p>
+                </li>
+
+                <li class="servises-list__item">
+                    <h4 class="servises-list__tittle">Строительстводомов</h4>
+                    <p class="servises-list__text">Профессиональная укладка блоков ПГС
+                    Укладка кирпича
+                    Укладка пазогребневых плит
+                    Монтаж плит
+                    Монтаж перекрытий
+                    монтаж балок и пермычек
+                    Изготовление монолитного пола
+                    Установка перегородок
+                    Установка вентиляционных каналов
+                    Кровельные работы любой сложности</p>
+                </li>
+
+                <li class="servises-list__item">
+                    <h4 class="servises-list__tittle">Электрика</h4>
+                    <p class="servises-list__text">Замена розеток и выключателей
+                    Перенос розеток и выключателей
+                    Замена электропроводки
+                    Сборка электросчетчиков
+                    Установка электросчетчиков</p>
+                </li>
+
+                <li class="servises-list__item">
+                    <h4 class="servises-list__tittle">Сантехника</h4>
+                    <p class="servises-list__text">Перенос и установка счетчиков
+                    Монтаж и ремонт водопровода
+                    Монтаж отопления
+                    Монтаж канализации
+                    Замена и перенос полотенцесушителя
+                    Установка кранов на полотенцесушитель
+                    Установка инсталляций
+                    Установка всех видов сантех оборудования
+                    Замена батарей отопления
+                    Замена и демонтаж радиатора отопления
+                    Замена труб в ванной и туалете
+                    Замена труб в ванной
+                    Замена труб на пластиковые
+                    Монтаж трубопроводов ПВХ
+                    Замена и демонтаж радиатора отопления</p>
+                </li>
+            </ul>
+
+            <p class="servises__post">Для многих ремонт — это что-то вроде стихийного бедствия, но чем тщательнее вы его спланируете, тем проще будет его
+                пережить. А уютная, привлекательная и чистая квартира – это мечта любого человека.
+            </p>
+            <h5 class="servises__tittle-bottom"></h5>
+    
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="container">
+    
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h3 class="about__tittle"></h3>
+
+            <ul class="about-list">
+                <li class="about-list__item"></li>
+                <li class="about-list__item"></li>
+                <li class="about-list__item"></li>
+                <li class="about-list__item"></li>
+                <li class="about-list__item"></li>
+            </ul>
+
+            <p class="about__text">более<span class="about__text--numb">15</span>лет успешной работы</p>
+    
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h3 class="gallery__tittle">ГАЛЕРЕЯ РАБОТ</h3>
+    
+        </div>
+    </section>
+
+    <section class="table">
+        <div class="container">
+            <h3 class="table__tittle">ПРАЙС-ЛИСТ НА УСЛУГИ</h3>
+            <div></div>
+            <button>Скачать весь прайс</button>
+    
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="container">
+            <h3 class="form__tittle">СВЯЖИТЕСЬ С НАМИ ИЛИ ОСТАВЬТЕ ЗАЯВКУ</h3>
+    
+        </div>
+    </section>
+
+    <footer class="page-footer">
+        <div class="container">
+            <ul class="contact-list">
+                <li class="contact-list__item">
+                    <svg class="contact-list__icon" width="30" height="30">
+                        <use href="./images/sprite.svg#phone@"></use>
+                    </svg>
+                    <a class="contact-list__link" href="tel:+ 375-29-123-45-67">+ 375-29-123-45-67</a>
+                </li>
+
+                <li class="contact-list__item">
+                    <svg class="contact-list__icon" width="23" height="30">
+                        <use href="./images/sprite.svg#note@"></use>
+                    </svg>
+                    <a class="contact-list__link" href="mailto:stroyka@gmail.com">stroyka@gmail.com</a>
+                </li>
+
+            </ul>
+
+            <div>
+                <p>ИП Костин А.Н.</p>
+                <p>УНП 11111111111</p>
+                <address>Юридический адрес</address>
+            </div>
+
+            <div class="footer--copyright">
+                <div class="container">
+                    <span class="footer__copyright-text"> &copy; Safehouse 2021</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
