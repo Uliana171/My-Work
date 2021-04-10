@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
@@ -55,9 +57,12 @@
 
     <section class="hero">
         <div class="container hero-container">
-            <h1 class="hero__tittle">Строительство и ремонт в Гомеле</h1>
-            <p class="hero__text">Надежное будущее строим вместе</p>
-            <button class="btn">Получить консультацию</button>
+           <div>
+                <h1 class="hero__tittle">Строительство и ремонт в Гомеле</h1>
+                <p class="hero__text">Надежное будущее строим вместе</p>
+                <button class="btn">Получить консультацию</button>
+           </div>
+
             <div class="hero__thumb">
                 <!-- srcset="./image/hero/hero1.jpg 1x, image/hero/hero1@2x.jpg 2x" -->
                 <img class="hero__img" src="./images/hero/hero1.jpg" alt="img">
@@ -66,8 +71,8 @@
     </section>
 
     <section class="work">
-        <div class="container">
-            <h3 class="work__tittle">КАК МЫ РАБОТАЕМ</h3>
+        <div class="container work-container">
+            <h3 class="tittle work-tittle">КАК МЫ РАБОТАЕМ</h3>
             <ol class="work-list">
                 <li class="work-list__item">Бесплатный выезд мастера на объект для оценки работы</li>
                 <li class="work-list__item">Обсуждение работы с заказчиком</li>
@@ -81,10 +86,15 @@
 
     <section class="servises">
         <div class="container">
-            <h3 class="servises__tittle">НАШИ УСЛУГИ</h3>
+            <h3 class="tittle servises-tittle">НАШИ УСЛУГИ</h3>
             <ul class="servises-list">
                 <li class="servises-list__item">
-                    <h4 class="servises-list__tittle">Отделочные работы</h4>
+                    <h4 class="servises-list__tittle">
+                        <a class="servises-list__link" href="#">Отделочные работы</a>
+                        <svg class="servises-list__icon" width="22" height="22">
+                            <use href="./images/sprite.svg#brush@"></use>
+                        </svg>
+                    </h4>
                     <p class="servises-list__text">Электромонтажные и сантехн ические работы
                     Демонтажные работы
                     Штукатурные работы
@@ -96,7 +106,9 @@
                 </li>
 
                 <li class="servises-list__item">
-                    <h4 class="servises-list__tittle">Строительстводомов</h4>
+                    <h4 class="servises-list__tittle">
+                        <a class="servises-list__link" href="#">Строительство домов</a>
+                    </h4>
                     <p class="servises-list__text">Профессиональная укладка блоков ПГС
                     Укладка кирпича
                     Укладка пазогребневых плит
@@ -110,7 +122,9 @@
                 </li>
 
                 <li class="servises-list__item">
-                    <h4 class="servises-list__tittle">Электрика</h4>
+                    <h4 class="servises-list__tittle">
+                        <a class="servises-list__link" href="#">Электрика</a>
+                    </h4>
                     <p class="servises-list__text">Замена розеток и выключателей
                     Перенос розеток и выключателей
                     Замена электропроводки
@@ -119,7 +133,9 @@
                 </li>
 
                 <li class="servises-list__item">
-                    <h4 class="servises-list__tittle">Сантехника</h4>
+                    <h4 class="servises-list__tittle">
+                        <a class="servises-list__link" href="#">Сантехника</a>
+                    </h4>
                     <p class="servises-list__text">Перенос и установка счетчиков
                     Монтаж и ремонт водопровода
                     Монтаж отопления
@@ -154,7 +170,7 @@
 
     <section class="about">
         <div class="container">
-            <h3 class="about__tittle"></h3>
+            <h3 class="tittle about-tittle"></h3>
 
             <ul class="about-list">
                 <li class="about-list__item"></li>
@@ -171,14 +187,14 @@
 
     <section class="gallery">
         <div class="container">
-            <h3 class="gallery__tittle">ГАЛЕРЕЯ РАБОТ</h3>
+            <h3 class="tittle gallery-tittle">ГАЛЕРЕЯ РАБОТ</h3>
     
         </div>
     </section>
 
     <section class="table">
         <div class="container">
-            <h3 class="table__tittle">ПРАЙС-ЛИСТ НА УСЛУГИ</h3>
+            <h3 class="tittle table-tittle">ПРАЙС-ЛИСТ НА УСЛУГИ</h3>
             <div></div>
             <button>Скачать весь прайс</button>
     
@@ -187,7 +203,7 @@
 
     <section class="form">
         <div class="container">
-            <h3 class="form__tittle">СВЯЖИТЕСЬ С НАМИ ИЛИ ОСТАВЬТЕ ЗАЯВКУ</h3>
+            <h3 class="tittle form-tittle">СВЯЖИТЕСЬ С НАМИ ИЛИ ОСТАВЬТЕ ЗАЯВКУ</h3>
     
         </div>
     </section>
