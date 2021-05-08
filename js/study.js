@@ -174,17 +174,60 @@ const friends = ['Mango', 'Kiwi', 'Poly', 'Ajax'];
 // }
 
 
-function includes(array, value) {
-  // Пиши код ниже этой строки
-    for (const el of array) {
-        if (el === value) {
-        return true
-    }
-    }
-    return false;
-
+// const bookShelf = {
+//   // Пиши код ниже этой строки
+//   books: ['Последнее королевство', 'Страж снов'],
+//   getBooks() {
+//     return 'Возвращаем все книги';
+//   },
+//   addBook(bookName) {
+//     return 'Добавляем книгу ${bookName}';
+//   },
+//   removeBook(bookName){
+//     return 'Удаляем книгу ${bookName}';
+//   },
+//     updateBook(oldName, newName) {
+//         for (const book of books) {
+//             if (book.name === oldName) {
+//                 book.name = newName;
+//           }
+//       }
+//     return 'Обновляем книгу ${oldName} на ${newName}';
+//   },
   
-  // Пиши код выше этой строки
-}
+  
+//   // Пиши код выше этой строки
+// };
+// console.log(bookShelf.getBooks());
+// console.log(bookShelf.addBook('Мгла'));
+// console.log(bookShelf.removeBook('Красный закат'));
+// console.log(bookShelf.updateBook('Пески Дюны', 'Дюна'));
 
-console.log(([1, 2, 3, 4, 5], 3));
+
+// const bookShelf = {
+//   books: [ 'Последнее королевство', 'Мгла', 'Страж снов'],
+//   getBooks() {
+//     return this.books;
+//   },
+//   addBook(bookName) {
+//       this.books.push(bookName);
+      
+//   },
+//   removeBook(bookName) {
+//     const bookIndex = this.books.indexOf(bookName);
+//       this.books.splice(bookIndex, 1);
+//       console.log(bookIndex);
+//   },
+// };
+
+// // console.log(bookShelf.getBooks()); // []
+// // bookShelf.addBook('Мгла');
+// // bookShelf.addBook('Страж снов');
+// // console.log(bookShelf.getBooks()); // ['Последнее королевство', 'Мгла', 'Страж снов']
+
+// bookShelf.removeBook('Мгла');
+// console.log(bookShelf.getBooks()); // ['Последнее королевство', 'Страж снов']
+
+
+
+
