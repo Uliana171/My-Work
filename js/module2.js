@@ -223,9 +223,9 @@ function filterArray(numbers, value) {
   // Пиши код ниже этой строки
 const newArray = [];
   for (const number of numbers){
-  if (number > value){
-   newArray.push(number);
-  }
+    if (number > value){
+      newArray.push(number);
+    }
   }
   
 return newArray;
@@ -274,7 +274,6 @@ function filterArray(numbers, value) {
   const filteredNumbers = [];
 
   for (const number of numbers) {
-
     if (number > value) {
       filteredNumbers.push(number);
     }

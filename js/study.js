@@ -229,36 +229,71 @@ const friends = ['Mango', 'Kiwi', 'Poly', 'Ajax'];
 // console.log(bookShelf.getBooks()); // ['Последнее королевство', 'Страж снов']
 
 
+// const users = [
+//   {
+//     name: 'Moore Hensley',
+//     email: 'moorehensley@indexia.com',
+//     eyeColor: 'blue',
+//     friends: ['Sharron Pace'],
+//     isActive: false,
+//     balance: 2811,
+//     gender: 'male'
+//   },
+//   {
+//     name: 'Sharlene Bush',
+//     email: 'sharlenebush@tubesys.com',
+//     eyeColor: 'blue',
+//     friends: ['Briana Decker', 'Sharron Pace'],
+//     isActive: true,
+//     balance: 3821,
+//     gender: 'female'
+//   }
+// ]
+
+// const getTotalFriendCount = users => {
+//   return users.reduce((total, user)=> total + user.friends.length, 0)};
+// console.log(users.reduce((total, user)=> total + user.friends.length, 0));
 
 
-const service = {
-  mailingList: ['mango@mail.com', 'poly@hotmail.de', 'ajax@jmail.net'],
-  subscribe(email) {
-    this.mailingList.push(email);
-    return `Почта ${email} добавлена в рассылку.`;
+
+
+const users = [
+{
+    name: 'Carey Barr',
+    email: 'careybarr@nurali.com',
+    eyeColor: 'blue',
+    friends: ['Jordan Sampson', 'Eddie Strong', 'Adrian Cross'],
+    isActive: true,
+    balance: 3951,
+    gender: 'male'
   },
-  unsubscribe(email) {
-    this.mailingList = this.mailingList.filter((e) => e !== email);
-    return `Почта ${email} удалена из рассылки.`;
+  {
+    name: 'Blackburn Dotson',
+    email: 'blackburndotson@furnigeer.com',
+    eyeColor: 'brown',
+    friends: ['Jacklyn Lucas', 'Linda Chapman', 'Adrian Cross', 'Solomon Fokes'],
+    isActive: false,
+    balance: 1498,
+    gender: 'male'
   },
+  {
+    name: 'Sheree Anthony',
+    email: 'shereeanthony@kog.com',
+    eyeColor: 'brown',
+    friends: ['Goldie Gentry', 'Briana Decker'],
+    isActive: true,
+    balance: 2764,
+    gender: 'female'
+  }
+]
+
+
+
+const getSortedFriends = users => {
+  return [...users]
+  .flatMap((user)=>user.friends)
+  .filter((friends, index, users) => users.indexOf(friends) === index)
+  .sort((a, b)=> a.friends.localeCompare(b.friends))
 };
+console.log([...users].sort((a, b) => a.friends.localeCompare(b.friends)));
 
-function logAndInvokeAction(email, action) {
-  console.log(`Выполняем действие с ${email}.`);
-  return subscribe(email);
-}
-
-const firstInvoke = logAndInvokeAction('kiwi@mail.uk', service.unsubscribe);
-console.log(firstInvoke);
-// Почта kiwi@mail.uk добавлена в рассылку.
-
-console.log(service.mailingList);
-/* ['mango@mail.com', 
-    'poly@hotmail.de', 
-    'ajax@jmail.net', 
-    'kiwi@mail.uk']*/
-const secondInvoke = logAndInvokeAction('poly@hotmail.de', service.unsubscribe);
-console.log(secondInvoke);
-// Почта poly@hotmail.de удалена из рассылки.
-
-console.log(service.mailingList); // ['mango@mail.com', 'ajax@jmail.net', 'kiwi@mail.uk']
